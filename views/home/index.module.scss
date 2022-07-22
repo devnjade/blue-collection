@@ -7,6 +7,9 @@
   overflow: hidden;
   margin-top: calc($header-height + 40px);
 
+  @media (max-width: 768px){
+    margin-top: 40px;
+  }
 
   .middle{
     display: flex;
@@ -22,6 +25,11 @@
       text-align: center;
       line-height: 70px;
       letter-spacing: -0.2rem;
+
+      @media (max-width: 768px){
+        font-size: 3rem;
+        line-height: 50px;
+      }
     }
 
     .stats{
@@ -34,6 +42,11 @@
       align-items: center;
       gap: 24px;
 
+      @media (max-width: 768px){
+        gap: 16px;
+        padding: 16px;
+      }
+
       .type{
         display: flex;
         flex-direction: column;
@@ -41,6 +54,11 @@
         &:first-child{
           border-right: 2px solid $white;
           padding-right: 24px;
+
+          @media (max-width: 768px){
+            border-right: 1px solid $white;
+            padding-right: 16px;
+          }
         }
 
         p{
@@ -48,12 +66,21 @@
           font-weight: bold;
           margin-bottom: 8px;
           letter-spacing: -0.2rem;
+
+          @media (max-width: 768px){
+            font-size: 1rem;
+            letter-spacing: -0.1rem;
+          }
         }
 
         span{
           font-size: 0.8rem;
           text-transform: capitalize;
           letter-spacing: -0.05rem;
+
+          @media (max-width: 768px){
+            font-size: 0.6rem;
+          }
         }
       }
     }

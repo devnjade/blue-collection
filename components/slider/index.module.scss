@@ -3,9 +3,13 @@
 .wrapper{
   display: flex;
   flex-direction: row;
-  // padding: 40px;
-  max-width: 1000px;
-  margin: 0 auto;
+  overflow-y: scroll;
+  overflow-y: hidden;
+  gap: 24px;
+  margin-top: 60px;
+  border-radius: 16px 16px 0 0;
 
-
+  &::-webkit-scrollbar{
+    display: none;
+  }
 }
