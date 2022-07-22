@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 * {
   outline: none;
   box-sizing: border-box;
@@ -11,9 +13,10 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  color: $black;
-  background: $bg;
-  cursor: crosshair;
+  background: $black;
+  color: $white;
+  cursor: default;
+  font-family: 'Roboto Mono', monospace;
 }
 
 input, select, textarea, button {
@@ -32,7 +35,7 @@ button {
 }
 
 p, a {
-  font-size: 16px;
+  font-size: 1rem;
   margin: 0;
   text-decoration: none;
   font-family: inherit;
@@ -42,6 +45,6 @@ p, a {
 p, a, span, button {
   &::selection {
     background: $black;
-    color: $white;
+    color: $blue;
   }
 }

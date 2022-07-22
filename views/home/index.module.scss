@@ -1,0 +1,61 @@
+@import 'styles/variables';
+
+.main{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  margin-top: calc($header-height + 40px);
+
+
+  .middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .header{
+      font-size: 4rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      max-width: 800px;
+      text-align: center;
+      line-height: 70px;
+      letter-spacing: -0.2rem;
+    }
+
+    .stats{
+      padding: 16px 24px;
+      border-radius: 8px;
+      background-color: $pill;
+      margin-top: 40px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 24px;
+
+      .type{
+        display: flex;
+        flex-direction: column;
+
+        &:first-child{
+          border-right: 2px solid $white;
+          padding-right: 24px;
+        }
+
+        p{
+          font-size: 2rem;
+          font-weight: bold;
+          margin-bottom: 8px;
+          letter-spacing: -0.2rem;
+        }
+
+        span{
+          font-size: 0.8rem;
+          text-transform: capitalize;
+          letter-spacing: -0.05rem;
+        }
+      }
+    }
+  } 
+}

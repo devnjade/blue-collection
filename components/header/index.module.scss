@@ -1,0 +1,73 @@
+@import 'styles/variables';
+
+.header{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  
+  .navbar{
+    max-width: 1000px;
+    height: $header-height;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 768px){
+      flex-direction: column;
+      align-items: flex-start;
+      height: auto;
+      padding: 14px 20px;
+    }
+
+
+    .left{
+      p{
+        font-size: 2rem;
+        color: $white;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: -0.2rem;
+        font-style: italic;
+      }
+    }
+
+    .center{
+      display: flex;
+      flex-direction: row;
+      gap: 32px;
+
+      p{
+        font-size: 1.2rem;
+        letter-spacing: -0.1rem;
+        font-weight: 500;
+        // font-style: italic;
+
+        @media (max-width: 768px){
+          font-size: 0.8rem;
+        }
+      }
+
+      @media (max-width: 768px){
+        gap: 14px;
+        flex-direction: column;
+        margin: 14px 0;
+        margin-bottom: 32px;
+      }
+    }
+
+    .right{
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+
+      @media (max-width: 768px){
+        gap: 14px;
+        flex-direction: column;
+      }
+      margin-left: -4px;
+    }
+  }
+}
