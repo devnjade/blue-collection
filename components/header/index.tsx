@@ -5,10 +5,22 @@ import styles from './index.module.scss';
 import search from 'assets/svgs/search.svg';
 import bag from 'assets/svgs/bag.svg';
 import user from 'assets/svgs/user.svg';
+import { motion } from "framer-motion";
+
+const header = { 
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 }
+}
 
 const Header: React.FC = () => {
   return  (
-    <header className={styles.header}>
+    <motion.header 
+      initial="hidden" 
+      animate="visible" 
+      variants={header}
+      className={styles.header}
+      transition={{ duration: 0.5 }}
+    >
       <div className={styles.navbar}>
         <div className={styles.left}>
           <p>Blue</p>
@@ -36,7 +48,7 @@ const Header: React.FC = () => {
           </button>
         </div>
       </div>
-    </header>
+    </motion.header>
   )
 }
 
